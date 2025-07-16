@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:width="0.7dp"
+        android:color="#FFAAAAAA" /> <!-- Warna dan ketebalan garis bisa diubah -->
+    <corners android:radius="8dp" /> <!-- Biar sudutnya agak membulat -->
+</shape>
