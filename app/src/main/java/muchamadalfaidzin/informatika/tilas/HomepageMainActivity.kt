@@ -104,19 +104,22 @@ class HomepageMainActivity : AppCompatActivity() {
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    // Sudah di homepage, tidak perlu pindah
                     true
                 }
-
                 R.id.nav_profile -> {
                     val intent = Intent(this, ProfileActivity::class.java)
                     startActivity(intent)
                     true
                 }
-
+                R.id.nav_search -> {
+                    val intent = Intent(this, SearchButtonActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
                 else -> false
             }
         }
+
     }
     }
 

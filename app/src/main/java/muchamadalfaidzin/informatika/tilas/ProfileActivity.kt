@@ -29,6 +29,11 @@ class ProfileActivity : AppCompatActivity() {
                     overridePendingTransition(0, 0) // opsional: tanpa animasi transisi
                     true
                 }
+                R.id.nav_search -> {
+                    val intent = Intent(this, SearchButtonActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
                 R.id.nav_profile -> true // tetap di halaman ini
                 else -> false
             }
